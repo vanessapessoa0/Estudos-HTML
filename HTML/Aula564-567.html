@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aulas forms</title>
+
+  <style>
+    label{cursor: pointer;}
+    .esse{display: block;}
+  </style>
+
+</head>
+
+<body>
+  <form action="#" method="get" target="_blank" autocomplete="off">
+    <section><h1>Cabeça</h1>
+    <p>forms</p>
+    <fieldset>
+      <legend>descrição</legend>
+      <p>
+        <input type="text"/>
+      </p>
+    </fieldset>
+  </section>
+  </form>
+
+  <form action="#" method="get" target="_blank" autocomplete="off">
+    <p> O meu formulário</p>
+    <p>
+      <label class="esse" for="nome"> Nome:</label>
+      <input type="text" id="nome" name="nome"
+      placeholder="Insira seu nome" required >
+    </p>
+
+    <p>
+      <p>É um dev?</p>
+
+      <input type="radio" id="dev1" name="dev" value="Sim">
+      <label for="dev1"> Sim</label>
+      <br>
+      <input type="radio" id="dev2" name="dev" value="Não">
+      <label for="dev2"> Não</label>
+    </p>
+
+    <p>
+      <p>Tipo:</p>
+
+      <input type="checkbox" id="Back" name="Backend" value="Back">
+      <label for="Back"> Backend</label>
+      <br>
+      <input type="checkbox" id="Front" name="Frontend" value="Front">
+      <label for="Front"> Frontend</label>
+      
+    </p>
+
+    <p>
+      <label for="data"> Data que respondeu:</label>
+      <input type="date" id="data" name="data">
+    </p>
+
+    <p>
+      <label for="datetime">Data:</label>
+      <input type="datetime-local" id="datetime" name="datetime">
+    </p>
+
+    <p>
+      <label for="hora">Horário:</label>
+      <input type="time" id="hora" name="hora">
+    </p>
+
+    <p>
+      <label for="cor">Cor preferida:</label>
+      <input type="color" id="cor" name="cor" value="#ffffff">
+    </p>
+
+    <p>
+      <label for="email">Seu email:</label>
+      <input type="email" id="email" name="email"
+      placeholder="Ex: email@email.com" >
+    </p>
+
+    <p>
+      <label for="arquivo">Sua foto:</label>
+      <input type="file" id="arquivo" name="arquivo"vg
+      accept="image/*" multiple>
+    </p>
+
+    <p>
+      <label for="numero">Número:</label>
+      <input type="number" id="numero" name="numero"
+      placeholder="Digite um número"
+      min="1" max="20" step="2">
+    </p>
+
+    <p>
+      <label for="senha">Sua senha:</label>
+      <input type="password" id="senha" name="senha"
+      placeholder="Digite sua senha">
+    </p>
+
+    <p>
+      <label for="range">Range:</label>
+      <input type="range" id="range" name="range"
+      list="tickmarks">
+    </p>
+
+    <p>
+      <label for="url">URL:</label>
+      <input type="url" id="url" name="url"
+      placeholder="Digite uma URL">
+    </p>
+
+    <p>
+      <label for="search">Search:</label>
+      <input type="search" id="search" name="search"
+      placeholder="Digite uma URL">
+    </p>
+
+    <p>
+      <label for="select">Selecione:</label>
+      <select id="select" name="select" multiple>
+        <optgroup label="Teste 1">
+         <option value="=qualquer 1" label="Valor 1"></option>
+         <option value="=qualquer 2" label="Valor 2"></option>
+         <option value="=qualquer 3" label="Valor 3" disabled></option>
+         <option value="=qualquer 4"label="Valor 4"></option>
+        </optgroup>
+
+        <optgroup label="Teste 2">
+          <option value="=qualquer 5" label="Valor 5"></option>
+          <option value="=qualquer 6" label="Valor 6"></option>
+          <option value="=qualquer 7" label="Valor 7" disabled></option>
+          <option value="=qualquer 8"label="Valor 8"></option>
+         </optgroup>
+      </select>
+    </p>
+
+    <p>
+      <label for="textarea">Textarea:</label>
+      <textarea name="textarea" id="textarea"
+      rows="5" cols="5">
+
+      </textarea>
+    </p>
+
+    <p>
+      <button type="submit">Enviar</button>
+      <button type="reset">Reset</button>
+      <button type="menu">Menu</button>
+      <button type="button">Button</button>
+    </p>
+  </form>
+</body>
+</html>

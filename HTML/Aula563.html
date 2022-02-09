@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 563</title>
+
+  <style>
+    body{font-family: sans-serif;}
+
+    *{margin: 0px 1px; 
+      padding: 0;}
+
+    p {margin: 0; padding: 0;}
+
+    nav {background-color: red; 
+      text-align: center;}
+
+    nav p {padding: 10px 20px ;
+    text-transform: uppercase;}
+   
+    table{border-collapse: collapse;
+    width: 800px;}
+
+    table td, table th {border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;}
+
+    table caption {caption-side: top;
+    text-align: left;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 5px;}
+
+    tfoot td, table th{background: #ddd;}
+
+    tfoot td {font-style: italic;}
+
+    .tabela {max-width: 100%;
+    overflow-x: scroll;}
+
+  </style>
+</head>
+<body>
+  <aside>
+   <nav> <p> Tabelas</p></nav>
+   </aside>
+<br>
+
+<div class="tabela">
+   <table>
+     <caption>Uma descrição para a tabela</caption>
+
+     <thead>
+      <tr>
+        <th>Título 1</th>
+        <th>Título 2</th>
+        <th>Título 3</th>
+        <th>Título 4</th>
+      </tr>
+     </thead>
+
+     <tbody>
+       <tr>
+        <td colspan="2">Ocupa + linha </td>
+        <td>Corpo 3</td>
+        <td >Corpo 4</td>
+      </tr>
+
+      <tr>
+        <td>Corpo 1</td>
+        <td>Corpo 2</td>
+        <td>Corpo 3</td>
+        <td>Corpo 4</td>
+      </tr>
+
+       <tr>
+        <td colspan="2" rowspan="2">Ocupa + linha </td>
+        <td>Corpo 3</td>
+        <td rowspan="2">Corpo 4</td>
+      </tr>
+
+      <tr>
+        <td>Corpo 3</td>
+      </tr> 
+     </tbody>
+
+     <tfoot>
+       <tr>
+        <td>Rodapé</td>
+        <td>Pode ter</td>
+        <td>Um total</td>
+        <td>Bem aqui</td>
+       </tr>
+
+       <tr>
+         <td colspan="3" rowspan="2"></td>
+         <td>Total:<br> R$555</td>
+       </tr>
+     </tfoot>
+   </table>
+</div>
+
+</body>
+</html>
